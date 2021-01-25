@@ -1,0 +1,7 @@
+- name: Dotfiles
+  file:
+    src: "{{ ansible_env.PWD }}/dotfiles/{{ item }}"
+    path: "~/.{{ item }}"
+    state: link
+  with_items:
+  - zprofile
