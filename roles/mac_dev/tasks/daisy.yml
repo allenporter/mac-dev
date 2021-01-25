@@ -1,5 +1,46 @@
+- name: Install GNU tar for unarchive
+  homebrew:
+    name: gnu-tar
+    state: present
 
 - name: Daisy Example repo
   git:
     repo: "https://github.com/allenporter/DaisyExamples"
     dest: "~/Development/DaisyExamples"
+
+- name: Create arm toolchain directory
+  file:
+    path: "~/Development/gcc-arm/"
+    state: directory
+
+- name: Check arm toolchain status
+  stat:
+    path: "~/Development/gcc-arm/bin/arm-none-eabi-gcc"
+  register: check_arm
+
+- name: Install arm toolchain
+  unarchive:
+    src: "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-mac.tar.bz2"
+    dest: "~/Development/gcc-arm/"
+    extra_opts: ["--strip-components=1"]
+    remote_src: yes
+  when: not check_arm.stat.exists
+
+- name: Create dfu-util
+  file:
+    path: "~/Development/dfu-util/"
+    state: directory
+
+- name: Check dfu-util status
+  stat:
+    path: "~/Development/dfu-util/darwin/dfu-util"
+  register: check_dfu_util
+
+
+- name: Install dfu-util
+  unarchive:
+    src: "https://sourceforge.net/projects/dfu-util/files/dfu-util-0.10-binaries.tar.xz/download"
+    dest: "~/Development/dfu-util/"
+    extra_opts: ["--strip-components=1"]
+    remote_src: yes
+  when: not check_dfu_util.stat.exists
