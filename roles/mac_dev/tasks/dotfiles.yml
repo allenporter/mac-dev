@@ -5,3 +5,4 @@
     state: link
   with_items:
   - zprofile
+  - vimrc
