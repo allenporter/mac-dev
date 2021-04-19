@@ -1,0 +1,22 @@
+---
+name: Lint
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  yaml:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: "./"
+          config_file: "./.github/yamllint-config.yaml"
+
