@@ -1,6 +1,8 @@
 - name: Install GNU tar for unarchive
   homebrew:
-    name: gnu-tar
+    name:
+      - gnu-tar
+      - libusb
     state: present
 
 - name: Daisy Example repo
