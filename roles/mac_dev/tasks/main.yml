@@ -1,5 +1,9 @@
+---
 - name: Dotfiles
   import_tasks: dotfiles.yml
 
 - name: Daisy
   import_tasks: daisy.yml
+
+- name: Go
+  import_tasks: go.yml

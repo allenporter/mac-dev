@@ -1,0 +1,6 @@
+---
+- name: Install golang
+  homebrew:
+    name:
+      - golang
+    state: present
