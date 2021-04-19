@@ -1,0 +1,14 @@
+---
+- name: Configure dns search domain ndots
+  lineinfile:
+    path: /etc/resolv.conf
+    regexp: '^options ndots:2'
+    line: options ndots:2
+    state: present
+
+- name: Configure search domain
+  lineinfile:
+    path: /etc/resolv.conf
+    regexp: '^search '
+    line: search mrv.thebends.org
+    state: present
