@@ -1,8 +1,10 @@
 # mac-dev
 
-Configuration for mac environment.
+## Introduction
 
-# Setup
+This is an Ansible managed Mac Development environment.
+
+## Setup
 
 - Install brew
 - Install openssl `brew install openssl`
