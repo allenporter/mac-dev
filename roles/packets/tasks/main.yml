@@ -1,0 +1,3 @@
+---
+- name: Sync packets
+  import_tasks: sync.yml

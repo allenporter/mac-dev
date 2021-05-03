@@ -1,0 +1,14 @@
+---
+- name: Copy tcpdump pcap files to local machine
+  vars:
+    remote_tcpdump_dir: /var/lib/tcpdump
+    local_tcpdump_dir: ~/Documents/
+  shell:
+    cmd: "rsync --rsync-path=\"sudo rsync\" -r {{ item }}:{{ remote_tcpdump_dir }} {{ local_tcpdump_dir }}"
+  with_items:
+    - cfg01.prod.mrv.thebends.org
+    - cfg02.prod.mrv.thebends.org
+    - cfg03.prod.mrv.thebends.org
+    - vmm01.prod.mrv.thebends.org
+    - vmm02.prod.mrv.thebends.org
+    - vmm03.prod.mrv.thebends.org

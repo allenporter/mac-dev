@@ -1,0 +1,7 @@
+#!/usr/bin/env ansible-playbook
+# Playbook for hunting down corrupted packets in the network
+
+- hosts: localhost
+  connection: local
+  roles:
+  - packets
