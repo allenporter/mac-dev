@@ -1,5 +1,6 @@
 ignore: |
   .github
+  venv
 extends: default
 rules:
   truthy:
