@@ -1,3 +1,9 @@
+- name: Install starship
+  homebrew:
+    name:
+      - starship
+    state: latest
+
 - name: Dotfiles
   file:
     src: "{{ ansible_env.PWD }}/dotfiles/{{ item }}"
