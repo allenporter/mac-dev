@@ -1,3 +1,4 @@
+---
 - name: Install GNU tar for unarchive
   homebrew:
     name:

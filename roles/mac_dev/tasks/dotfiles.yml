@@ -1,7 +1,8 @@
+---
 - name: Install starship
   homebrew:
     name:
-      - starship
+    - starship
     state: latest
 
 - name: Dotfiles
