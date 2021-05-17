@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "America/Los_Angeles",
+  "assignees": ["allenporter"],
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard",
+}
