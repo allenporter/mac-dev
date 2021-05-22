@@ -11,5 +11,6 @@
     path: "~/.{{ item }}"
     state: link
   with_items:
-  - zprofile
   - vimrc
+  - zprofile
+  - zshrc
