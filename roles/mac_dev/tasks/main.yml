@@ -9,4 +9,4 @@
   import_tasks: go.yml
 
 - name: esp8266
-  import_tasks: esp8266.yml 
+  import_tasks: esp8266.yml
