@@ -5,6 +5,9 @@
 - name: Daisy
   import_tasks: daisy.yml
 
+- name: Mac Development Projects
+  import_tasks: projects.yaml
+
 - name: Go
   import_tasks: go.yml
 

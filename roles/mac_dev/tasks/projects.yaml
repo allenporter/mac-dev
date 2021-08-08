@@ -1,0 +1,15 @@
+---
+---
+- name: Install GNU tar for unarchive
+  homebrew:
+    name:
+      - ruby
+    state: present
+
+- name: Development git repos
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ development_dir }}/{{ item.dest }}"
+  with_items:
+    - { repo: "https://github.com/home-assistant/iOS.git",
+        dest: "home-assistant-ios" }
