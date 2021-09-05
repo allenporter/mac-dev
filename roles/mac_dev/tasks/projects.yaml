@@ -1,9 +1,9 @@
 ---
----
-- name: Install GNU tar for unarchive
+- name: Install packages
   homebrew:
     name:
       - ruby
+      - xquartz
     state: present
 
 - name: Development git repos
