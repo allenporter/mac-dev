@@ -13,5 +13,11 @@
       "automergeType": "branch",
       "matchUpdateTypes": ["minor", "patch"],
     },
+    {
+      "description": "Major updates weekly",
+      "extends": ["schedule:weekends"],
+      "stabilityDays": 1,
+      "matchUpdateTypes": ["major"],
+    },
   ],
 }
