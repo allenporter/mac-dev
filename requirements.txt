@@ -8,7 +8,7 @@ Jinja2==3.0.2
 MarkupSafe==2.0.1
 packaging==21.2
 pathspec==0.9.0
-pycparser==2.20
+pycparser==2.21
 pyparsing==3.0.4
 PyYAML==6.0
 resolvelib==0.8.1
