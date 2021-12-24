@@ -3,6 +3,12 @@
   homebrew:
     name:
       - ruby
+      - ffmpeg
+    state: present
+
+- name: Install packages
+  homebrew_cask:
+    name:
       - xquartz
     state: present
 
