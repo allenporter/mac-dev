@@ -3,6 +3,7 @@ ansible-core==2.12.1
 asn1crypto==1.4.0
 cffi==1.15.0
 cryptography==36.0.1
+fonttools==4.26.1
 idna==3.3
 Jinja2==3.0.3
 MarkupSafe==2.0.1
@@ -11,6 +12,6 @@ pathspec==0.9.0
 pycparser==2.21
 pyparsing==3.0.6
 PyYAML==6.0
-resolvelib==0.8.1
+resolvelib==0.5.4
 six==1.16.0
 yamllint==1.26.3
