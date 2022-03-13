@@ -16,6 +16,4 @@
   git:
     repo: "{{ item.repo }}"
     dest: "{{ development_dir }}/{{ item.dest }}"
-  with_items:
-    - { repo: "https://github.com/home-assistant/iOS.git",
-        dest: "home-assistant-ios" }
+  with_items: []
