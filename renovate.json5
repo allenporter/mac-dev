@@ -8,6 +8,13 @@
   "dependencyDashboardTitle": "Renovate Dashboard",
   "packageRules": [
     {
+      "packagePatterns": [
+          // Leave resolvelib alone until https://github.com/ansible/ansible/pull/76257
+          "^resolvelib.*"
+      ],
+      "enabled": false,
+    },
+    {
       "description": "Minor updates are automatic",
       "automerge": true,
       "automergeType": "branch",
