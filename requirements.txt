@@ -1,5 +1,5 @@
 ansible==5.7.1
-ansible-core==2.12.5
+ansible-core==2.13.0
 asn1crypto==1.5.1
 cffi==1.15.0
 cryptography==37.0.2
