@@ -2,7 +2,7 @@ ansible==7.3.0
 ansible-core==2.14.4
 asn1crypto==1.5.1
 cffi==1.15.1
-cryptography==39.0.2
+cryptography==40.0.1
 fonttools==4.39.3
 idna==3.4
 Jinja2==3.1.2
