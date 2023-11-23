@@ -3,7 +3,7 @@ ansible-core==2.16.0
 asn1crypto==1.5.1
 cffi==1.16.0
 cryptography==41.0.5
-fonttools==4.45.0
+fonttools==4.45.1
 idna==3.4
 Jinja2==3.1.2
 MarkupSafe==2.1.3
