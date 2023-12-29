@@ -1,3 +1,3 @@
 eval $(/opt/homebrew/bin/brew shellenv)
 
-export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/openssl@1.1/bin:${HOME}/Development/gcc-arm/bin:${HOME}/Development/dfu-util/darwin:${HOME}/go/bin:$PATH"
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
