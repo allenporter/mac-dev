@@ -1,6 +1,6 @@
 ---
 - name: Dotfiles
-  import_tasks: dotfiles.yml
+  import_tasks: dotfiles.yaml
 
 - name: Mac Development Projects
   import_tasks: projects.yaml
