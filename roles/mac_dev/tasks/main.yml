@@ -2,14 +2,5 @@
 - name: Dotfiles
   import_tasks: dotfiles.yml
 
-- name: Daisy
-  import_tasks: daisy.yml
-
 - name: Mac Development Projects
   import_tasks: projects.yaml
-
-- name: Go
-  import_tasks: go.yml
-
-- name: esp8266
-  import_tasks: esp8266.yml

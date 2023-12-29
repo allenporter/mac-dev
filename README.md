@@ -16,7 +16,7 @@ This is an Ansible managed Mac Development environment.
 - Install ansible
 ```
 # Brew environment variables
-%  export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+% export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 % export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 % pip3 install ansible
 ```

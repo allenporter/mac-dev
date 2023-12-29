@@ -1,7 +1,0 @@
----
-- name: Install golang
-  homebrew:
-    name:
-      - golang
-    state: latest
-    update_homebrew: yes

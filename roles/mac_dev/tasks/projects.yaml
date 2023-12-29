@@ -1,19 +1,6 @@
 ---
 - name: Install packages
-  homebrew:
-    name:
-      - ruby
-      - ffmpeg
-    state: present
-
-- name: Install packages
   homebrew_cask:
     name:
       - xquartz
     state: present
-
-- name: Development git repos
-  git:
-    repo: "{{ item.repo }}"
-    dest: "{{ development_dir }}/{{ item.dest }}"
-  with_items: []
