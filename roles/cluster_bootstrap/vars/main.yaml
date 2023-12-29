@@ -1,0 +1,4 @@
+---
+# renovate: datasource=github-releases depName=kairos-io/AuroraBoot
+auroraboot_version: 0.2.7
+download_url: https://github.com/kairos-io/AuroraBoot/releases/download

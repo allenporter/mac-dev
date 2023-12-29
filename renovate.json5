@@ -6,6 +6,16 @@
   "assignees": ["allenporter"],
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
+  "regexManagers": [
+    {
+      "description": "Yaml file versions",
+      "fileMatch": [".+\\.yaml$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s.+?_version: (?<currentValue>.+?)\\s"
+      ],
+      "extractVersionTemplate": "^v?(?<version>.*)$",
+    }
+  },
   "packageRules": [
     {
       "packagePatterns": [

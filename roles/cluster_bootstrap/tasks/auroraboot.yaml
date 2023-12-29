@@ -1,0 +1,28 @@
+---
+- name: Install xorriso
+  homebrew:
+    name:
+    - xorriso
+    state: latest
+
+- set_fact:
+    install_version_dir: ~/bin/AuroraBoot-v{{ auroraboot_version }}
+    install_dir: ~/bin
+
+- name: AuroraBoot install directory
+  file:
+    path: "{{ install_version_dir }}"
+    state: directory
+
+- name: Install AuroraBoot
+  unarchive:
+    src: "{{ download_url }}/v{{ auroraboot_version }}/AuroraBoot_{{ auroraboot_version }}_darwin_arm64.tar.gz"
+    dest: "{{ install_version_dir }}"
+    remote_src: yes
+    creates: "{{ install_version_dir }}/AuroraBoot"
+
+- name: symlink AuroraBoot
+  file:
+    src: "{{ install_version_dir }}/AuroraBoot"
+    dest: "{{ install_dir }}/AuroraBoot"
+    state: link
